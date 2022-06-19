@@ -3,14 +3,17 @@ status = "";
 
 function preload()
 {
-    video = createVideo('video.mp4');
+     
    
 }
 function setup()
 {
+
+  video = createCapture(VIDEO);
+  video.size(60, 500);
   canvas = createCanvas(480, 380);
   canvas.center();
-  video.hide();
+
 }
 function draw()
 {
